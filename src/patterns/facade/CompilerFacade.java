@@ -10,16 +10,16 @@ public class CompilerFacade {
      * @return `compiled` code
      */
     public static String compileCode(String code) {
-        JavaCodeParser javaCodeParser = new JavaCodeParser();
+        Parser javaCodeParser = new JavaCodeParser();
         javaCodeParser.parse(code);
 
-        JavaCodeScanner javaCodeScanner = new JavaCodeScanner();
+        Scanner javaCodeScanner = new JavaCodeScanner();
         javaCodeScanner.scan(code);
 
-        JavaCompiler javaCompiler = new JavaCompiler();
+        Compiler javaCompiler = new JavaCompiler();
         javaCompiler.compile();
 
-        JavaByteCodeStream javaByteCodeStream = new JavaByteCodeStream();
+        ByteCodeStream javaByteCodeStream = new JavaByteCodeStream();
 
         return javaByteCodeStream.stream(code);
     }

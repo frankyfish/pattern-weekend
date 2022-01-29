@@ -11,6 +11,9 @@ simplified interface to the more general facilities of a subsystem.
 Simply put here:
 https://refactoring.guru/design-patterns/facade
 https://refactoring.guru/design-patterns/facade/java/example
+When you call a shop to place a phone order, an operator is your facade to all services and departments of the shop. 
+The operator provides you with a simple voice interface to the ordering system, payment gateways,
+and various delivery services.
 
 ### Example
 Subsystem contains classes such as Scanner, Parser, ProgramNode, BytecodeStream, and ProgramNodeBuilder
